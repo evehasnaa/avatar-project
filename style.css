@@ -1,0 +1,162 @@
+@import url('https://fonts.googleapis.com/css2?family=Oxygen+Mono&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Oxygen Mono", system-ui;
+}
+body{
+    background-image: linear-gradient(#01022d,#000);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.countainer{
+    background-image: linear-gradient(rgba(38, 0, 255, 0.521) 30%, #01022d50 ),
+    url(download.webp);
+    width: 90%;
+    height: 640px;
+    background-position: center;
+    transition: background-image 0.5s ease  ;
+
+
+}
+.countainer:hover{
+    background-image: linear-gradient(rgba(38, 0, 255, 0.61) 30%,transparent ),
+    url(download.webp);
+
+}
+a{
+    color: white;
+    text-decoration: none;
+
+}
+.countainer header{
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 10px;
+    align-items: center;
+
+}
+
+.countainer .logo{
+    text-transform: uppercase;
+    font-size: 30px;
+   letter-spacing: 4px;
+   padding: 40px;
+    margin: 20px;
+
+}
+
+.countainer ul{
+    width: 60%;
+    list-style: none;
+   
+    display: flex;
+    justify-content: space-evenly;
+    gap: 30px;
+    margin: 20px 20px;
+}
+ul a{
+    border-bottom: 2px solid transparent;
+
+}
+ul a:hover{
+    border-bottom: 2px solid white;
+}
+.content{
+    width: 50%;
+    color: white;
+    margin-top: 50px;
+    margin-top: 50px;
+    padding: 30px;
+
+}
+.content h2{
+    font-size: 100px;
+    text-transform: uppercase;
+
+    
+}
+.content p{
+    letter-spacing: 2px;
+    width: 350px;
+    padding: 20px 0;
+
+}
+.content button{
+     font-size: 30px;
+     padding: 6px 10px;
+    text-align: center;
+    margin: 10px 0;
+    border-radius: 10px ;
+    }    
+    .content button{
+        border-color: transparent ;
+        border-color: white;
+        color: white;
+        cursor: pointer;
+
+    }
+    /* ****  responsive media   ****/
+    @media (max-width: 800px){
+       .countainer{
+            height: auto;
+            flex-direction: column;
+            align-items: center;
+        }
+        .countainer ul{
+            flex-direction: column;
+            gap: 15px;
+            width: 100%;
+            justify-content: center;
+
+        }
+       .content{
+            width: 90%;
+        }
+        .content h2{
+        font-size: 80px;
+        }
+        .content p{
+      
+        font-size: 14px;
+        .content bottom{
+            padding: 8px 16px;
+            font-size: 16px;
+        }
+    }
+    @media (max-width: 1000px){
+        .countainer{
+            height: auto;
+            flex-direction: column;
+            align-items: center;
+        
+
+        }
+
+        .content h2{
+        font-size: 50px;
+        }
+        .countainer button{
+        font-size: 18px;
+        }
+    }
+    @media (max-width: 1500px){
+       .content{
+        font-size: 60px;
+
+       }
+       .content p{
+        width: 100%;
+        font-size: 16px;
+
+       }
+       .countainer ul{
+        width: 80%;
+       }
+    }
